@@ -1,0 +1,38 @@
+{
+  "name": "vue-guard",
+  "version": "1.0.0",
+  "description": "Permission based authorization utilities for Vue2+ apps",
+  "main": "dist/vue-guard.js",
+  "module": "dist/vue-guard.esm.js",
+  "browser": "dist/vue-guard.umd.js",
+  "author": "Abolarin Olanrewaju <waju.abolarin@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "typings": "types/index.d.ts",
+  "files": [
+    "src",
+    "dist/*.js",
+    "types/*.d.ts"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "jest": "^24.9.0",
+    "rollup": "^1.27.14",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "ts-jest": "^24.2.0",
+    "ts-node": "^8.5.4",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.4"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.3"
+  }
+}
